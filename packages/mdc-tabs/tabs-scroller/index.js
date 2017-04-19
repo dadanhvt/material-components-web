@@ -38,8 +38,8 @@ export class MDCTabsScroller extends MDCComponent {
     this.computedFrameWidth_ = 0;
     this.scrollFrame = this.root_.querySelector(MDCTabsScrollerFoundation.strings.FRAME_SELECTOR);
     this.tabs = this.root_.querySelector(MDCTabsScrollerFoundation.strings.TABS_SELECTOR);
-    this.shiftLeftTarget = this.root_.querySelector(MDCTabsScrollerFoundation.strings.INDICATOR_LEFT_SELECTOR);
-    this.shiftRightTarget = this.root_.querySelector(MDCTabsScrollerFoundation.strings.INDICATOR_RIGHT_SELECTOR);
+    this.shiftLeftTarget = this.root_.querySelector(MDCTabsScrollerFoundation.strings.INDICATOR_BACK_SELECTOR);
+    this.shiftRightTarget = this.root_.querySelector(MDCTabsScrollerFoundation.strings.INDICATOR_FORWARD_SELECTOR);
 
     requestAnimationFrame(() => this.layout_());
   }
